@@ -23,3 +23,5 @@ export const Label = ({ title = "label", backgroundColor = "white", size = "norm
             </span>
     )
 }
+
+export default Label;

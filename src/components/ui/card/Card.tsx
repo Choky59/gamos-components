@@ -12,3 +12,5 @@ export const Card = ({ title = "cardComponent" }: CardProps) => {
         </div>
     )
 }
+
+export default Card;
