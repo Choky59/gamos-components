@@ -42,7 +42,8 @@
     "build": "npm run clean; tsc; npm run copy-files-css",
     "build-storybook": "build-storybook",
     "clean": "rimraf dist/",
-    "copy-files-css": "copyfiles -u 1 src/**/*.css dist/"
+    "copy-files-css": "copyfiles -u 1 src/**/*.css dist/",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -97,5 +98,8 @@
     "@semantic-release/github",
     "@semantic-release/npm",
     "@semantic-release/git"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
