@@ -8,6 +8,7 @@ export const Card = ({ title = "cardComponent" }: CardProps) => {
     return (
         <div>
             {title}
+            {title.toUpperCase()}
         </div>
     )
 }
