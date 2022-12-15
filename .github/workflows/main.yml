@@ -32,13 +32,13 @@ jobs:
         run: npm install
 
       - name: Clean dist App
-        run: npm clean
+        run: npm run clean
 
       - name: Build App
-        run: npm build
+        run: npm run build
 
       - name: Copy css files 
-        run: npm copy-files-css
+        run: npm run copy-files-css
 
       - name: Semantic Release
         env:
