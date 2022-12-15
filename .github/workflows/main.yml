@@ -31,11 +31,18 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Clean dist App
+        run: npm clean
+
       - name: Build App
         run: npm build
+
+      - name: Copy css files 
+        run: npm copy-files-css
 
       - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+
