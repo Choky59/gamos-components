@@ -39,10 +39,11 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -s public",
-    "build": "npm run clean; tsc; npm run copy-files-css",
+    "build": "tsc",
+    "build-tsc": "tsc",
+    "copy-files-css": "copyfiles -u 1 src/**/*.css dist/",
     "build-storybook": "build-storybook",
     "clean": "rimraf dist/",
-    "copy-files-css": "copyfiles -u 1 src/**/*.css dist/",
     "semantic-release": "semantic-release"
   },
   "eslintConfig": {
