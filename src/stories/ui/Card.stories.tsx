@@ -4,9 +4,10 @@ import { Card, CardProps } from '../../components/ui/card/Card';
 export default {
   title: 'UI/Card',
   component: Card,
-  argTypes: {
-  },
+  argTypes: {},
 } as ComponentMeta<typeof Card>;
+
+
 
 const Template: ComponentStory<typeof Card> = (args: CardProps) => <Card {...args} />;
 
