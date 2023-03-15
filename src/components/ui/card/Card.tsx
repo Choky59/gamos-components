@@ -7,7 +7,8 @@ export interface CardProps {
 export const Card = ({ title = "cardComponent" }: CardProps) => {
     return (
         <div>
-            {title}
+            
+            <p className='background'>{title}</p>
             {title.toUpperCase()}
         </div>
     )
