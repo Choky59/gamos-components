@@ -5,13 +5,14 @@ export interface CardProps {
 }
 
 export const Card = ({ title = "cardComponent" }: CardProps) => {
+    
     return (
         <div>
-            
             <p className='background'>{title}</p>
             {title.toUpperCase()}
         </div>
     )
+    
 }
 
 export default Card;
